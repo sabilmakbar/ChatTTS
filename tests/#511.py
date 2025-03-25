@@ -10,7 +10,7 @@ import logging
 
 import ChatTTS
 
-from tools.logger import get_logger
+from ChatTTS.tools.logger import get_logger
 
 logger = get_logger("Test", lv=logging.WARN)
 

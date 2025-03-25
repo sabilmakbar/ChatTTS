@@ -12,8 +12,8 @@ import torch
 
 import ChatTTS
 
-from tools.logger import get_logger
-from tools.normalizer import normalizer_en_nemo_text
+from ChatTTS.tools.logger import get_logger
+from ChatTTS.tools.normalizer import normalizer_en_nemo_text
 
 logger = get_logger("Test", lv=logging.WARN)
 
