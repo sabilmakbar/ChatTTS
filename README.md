@@ -1,4 +1,5 @@
 <div align="center">
+
 # ChatTTS w/ Toolkit
 Forked from ChatTTS Repo
 
@@ -14,10 +15,12 @@ Forked from ChatTTS Repo
 </div>
 
 ## Introduction
-> [!Note]
-> This repo contains patch of ChatTTS that will include `tools`
+This repo contains patch of ChatTTS that will include `tools`
 
-To utilize, just simply do 
+To utilize the `tools` module, just simply do 
 ```python
 from ChatTTS import tools as chattts_tools
 ```
+
+> [!Note]
+> The `tests` is already adjusted to use `tools` calling from this repo dir structure, but not with the `examples`
