@@ -29,11 +29,11 @@ from .norm import Normalizer
 
 
 class Chat:
-    def __init__(self, logger=logging.getLogger(__name__)):
+    def __init__(self, logger=logging.getLogger(__name__), config=Config()):
         self.logger = logger
         utils_logger.set_logger(logger)
 
-        self.config = Config()
+        self.config = config
 
         self.normalizer = Normalizer(
             os.path.join(os.path.dirname(__file__), "res", "homophones_map.json"),
