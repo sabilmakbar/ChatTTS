@@ -325,7 +325,7 @@ class Chat:
             coef=coef,
             device=dvae_device,
         )
-        coef = str(dvae)
+        coef = dvae.get_coef()
         assert dvae_ckpt_path, "dvae_ckpt_path should not be None"
         dvae.load_pretrained(dvae_ckpt_path, dvae_device)
         self.dvae = dvae.eval()
@@ -367,7 +367,7 @@ class Chat:
             coef=coef,
             device=device,
         )
-        coef = str(decoder)
+        coef = decoder.get_coef()
         assert decoder_ckpt_path, "decoder_ckpt_path should not be None"
         decoder.load_pretrained(decoder_ckpt_path, device)
         self.decoder = decoder.eval()

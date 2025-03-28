@@ -242,7 +242,7 @@ class DVAE(nn.Module):
         else:
             self.vq_layer = None
 
-    def __repr__(self) -> str:
+    def get_coef(self) -> str:
         return b14.encode_to_string(
             self.coef.cpu().numpy().astype(np.float32).tobytes()
         )
